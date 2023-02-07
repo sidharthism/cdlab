@@ -18,16 +18,16 @@ void display(int n)
 int main()
 {
     char state[3], state1[3], input[3], state2[3];
-    int end, n, i = 0, j = 0;
+    int end, n, j = 0;
     FILE *INPUT = fopen("einput.txt", "r");
     printf("\nEnter the no of states: ");
     scanf("%d", &n);
     printf("\nEnter the states:");
 
-    for (i = 0; i < n; i++)
+    for (int i = 0; i < n; i++)
         scanf("%s", states[i]);
 
-    for (i = 0; i < n; i++)
+    for (int i = 0; i < n; i++)
     {
         j = 0;
         strcpy(state, states[i]);
